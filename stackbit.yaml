@@ -322,6 +322,10 @@ models:
         name: seo
         models:
           - stackbit_page_meta
+      - type: model
+        name: Review
+        models:
+          - review
   action:
     type: object
     label: Action
@@ -412,6 +416,19 @@ models:
       - type: string
         name: more_link_text
         label: Read more link label
+  review:
+    type: object
+    label: Review
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: message
+        label: Message
+      - type: integer
+        name: rating
+        label: Rating
   stackbit_page_meta:
     type: object
     label: Page meta data
