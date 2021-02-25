@@ -58,6 +58,11 @@ export default function Post(props) {
                         </div>
                     ))}
                 </div>
+
+                <div>
+                    <h2>Leave a review</h2>
+                    <a href={`https://picsoung.typeform.com/to/SL09LYJ3#product_name=${props.pageContext.frontmatter.title}&product_id=xxxxx`}> Review</a>
+                </div>
             </section>
         </Layout>
     );
