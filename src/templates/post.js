@@ -18,7 +18,7 @@ export const query = graphql`
 
 export default function Post(props) {
 
-    const typeform = useRef(null);
+    // const typeform = useRef(null);
     console.log('props',props)
 
     // useEffect(() => {
@@ -48,7 +48,16 @@ export default function Post(props) {
                     {htmlToReact(_.get(props, 'pageContext.html', null))}
                 </div>
                 {/* <div ref={typeform} style={{ height: '100vh', width: '100%' }}></div> */}
-
+                <div>
+                    <h2>Reviews</h2>
+                    {_.get(props, 'pageContext.frontmatter.review', null).map(({ title, rating, message }, index) => (
+                        <div key={index}>
+                            <h3>{title}</h3>
+                            <p>{rating}</p>
+                            <p>{message}</p>
+                        </div>
+                    ))}
+                </div>
             </section>
         </Layout>
     );
