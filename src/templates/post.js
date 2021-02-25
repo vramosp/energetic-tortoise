@@ -29,7 +29,7 @@ export default function Post(props) {
         (async () => {
             const { makeWidget } = await import("@typeform/embed");
             if (typeform.current) {
-                makeWidget(typeform.current, `https://picsoung.typeform.com/to/SL09LYJ3#product_name=${props.pageContext}&product_id=xxxxx`, {});
+                makeWidget(typeform.current, `https://picsoung.typeform.com/to/SL09LYJ3#product_name=${props.pageContext.frontmatter.title}&product_id=xxxxx`, {});
             }
         })();
     }, []);
