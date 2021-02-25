@@ -50,7 +50,7 @@ export default function Post(props) {
                 {/* <div ref={typeform} style={{ height: '100vh', width: '100%' }}></div> */}
                 <div>
                     <h2>Reviews</h2>
-                    {_.get(props, 'pageContext.frontmatter.review', null).map(({ title, rating, message }, index) => (
+                    {_.get(props, 'pageContext.frontmatter.review', null) && _.get(props, 'pageContext.frontmatter.review', null).map(({ title, rating, message }, index) => (
                         <div key={index}>
                             <h3>{title}</h3>
                             <p>{rating}</p>
