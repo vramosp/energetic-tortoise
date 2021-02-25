@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import { graphql } from 'gatsby';
@@ -18,10 +18,6 @@ export const query = graphql`
 
 export default function Post(props) {
 
-    // const [typeform, setTypeform] = useState(null);
-    const typeformRef = useRef(null)
-
-
     const typeform = useRef(null);
     console.log('props',props)
 
@@ -32,7 +28,7 @@ export default function Post(props) {
                 makeWidget(typeform.current, `https://picsoung.typeform.com/to/SL09LYJ3#product_name=${props.pageContext.frontmatter.title}&product_id=xxxxx`, {});
             }
         })();
-    }, []);
+    }, [props.pageContext.frontmatter.title]);
     return (
         <Layout {...props}>
             <section className="post">
