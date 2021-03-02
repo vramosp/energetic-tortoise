@@ -326,9 +326,6 @@ models:
         name: Review
         models:
           - review
-      - type: string
-        name: id
-        label: id
   action:
     type: object
     label: Action
