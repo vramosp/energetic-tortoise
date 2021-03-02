@@ -426,7 +426,7 @@ models:
       - type: string
         name: message
         label: Message
-      - type: integer
+      - type: number
         name: rating
         label: Rating
   stackbit_page_meta:
