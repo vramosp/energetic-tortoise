@@ -4,6 +4,7 @@ import SectionContent from './SectionContent';
 import SectionHero from './SectionHero';
 import SectionPosts from './SectionPosts';
 import Layout from './Layout';
+import ReviewForm from './Layout';
 
 export {
     Footer,
