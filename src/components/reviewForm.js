@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import * as typeformEmbed from '@typeform/embed'
 
-const MyTypeform = () => {
+const re = () => {
   const typeformRef = useRef(null)
 
   useEffect(() => {
