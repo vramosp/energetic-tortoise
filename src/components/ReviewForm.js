@@ -12,5 +12,5 @@ export default  ReviewForm{
     })
   }, [typeformRef])
 
-    return <div ref={typeformRef} style={{ height: '100vh', width: '100%' }}></div>
+    return (<div ref={typeformRef} style={{ height: '100vh', width: '100%' }}></div>)
 }
