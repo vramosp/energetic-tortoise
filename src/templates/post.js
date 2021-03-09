@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import _ from 'lodash';
 import moment from 'moment-strftime';
 import { graphql } from 'gatsby';
