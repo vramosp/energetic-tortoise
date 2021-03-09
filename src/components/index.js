@@ -12,7 +12,8 @@ export {
     SectionContent,
     SectionHero,
     SectionPosts,
-    Layout
+    Layout,
+    ReviewForm
 };
 
 export default {
