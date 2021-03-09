@@ -47,7 +47,6 @@ export default function Post(props) {
                 <div className="content">
                     {htmlToReact(_.get(props, 'pageContext.html', null))}
                 </div>
-                {/* <div ref={typeform} style={{ height: '100vh', width: '100%' }}></div> */}
                 <div>
                     <h2>Reviews</h2>
                     {_.get(props, 'pageContext.frontmatter.review', null) && _.get(props, 'pageContext.frontmatter.review', null).map(({ name, rating, message }, index) => (
