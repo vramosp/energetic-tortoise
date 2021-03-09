@@ -22,5 +22,6 @@ export default {
     SectionContent,
     SectionHero,
     SectionPosts,
-    Layout
+    Layout,
+    ReviewForm
 };
