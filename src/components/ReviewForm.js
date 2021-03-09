@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import * as typeformEmbed from '@typeform/embed'
 
-export default ReviewForm = () => {
+export default class Body extends React.Component {
   const typeformRef = useRef(null)
 
   useEffect(() => {
