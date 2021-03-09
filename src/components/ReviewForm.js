@@ -5,7 +5,7 @@ const ReviewForm = ({productName}) =>{
   const typeformRef = useRef(null)
 
   useEffect(() => {
-    typeformEmbed.makeWidget(typeformRef.current, `https://form.typeform.com/to/SL09LYJ3#product_name=${product_name}`, {
+    typeformEmbed.makeWidget(typeformRef.current, `https://form.typeform.com/to/SL09LYJ3#product_name=${productName}`, {
       hideFooter: true,
       hideHeaders: true,
       opacity: 50,
