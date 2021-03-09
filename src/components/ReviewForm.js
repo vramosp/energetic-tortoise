@@ -15,4 +15,4 @@ const ReviewForm = () =>{
     return (<div ref={typeformRef} style={{ height: '100vh', width: '100%' }}></div>)
 }
 
-export default ErrorBox;
+export default ReviewForm;
