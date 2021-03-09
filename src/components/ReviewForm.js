@@ -10,7 +10,7 @@ const ReviewForm = ({productName}) =>{
       hideHeaders: true,
       opacity: 50,
     })
-  }, [typeformRef, ])
+  }, [typeformRef, productName])
 
     return (<div ref={typeformRef} style={{ height: '100vh', width: '100%' }}></div>)
 }
