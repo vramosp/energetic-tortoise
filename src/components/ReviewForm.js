@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import * as typeformEmbed from '@typeform/embed'
 
-export default ReviewForm = () =>{
+const ReviewForm = () =>{
   const typeformRef = useRef(null)
 
   useEffect(() => {
@@ -14,3 +14,5 @@ export default ReviewForm = () =>{
 
     return (<div ref={typeformRef} style={{ height: '100vh', width: '100%' }}></div>)
 }
+
+export default ErrorBox;
