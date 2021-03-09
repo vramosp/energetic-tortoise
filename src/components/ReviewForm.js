@@ -12,7 +12,7 @@ export default class ReviewForm extends React.Component {
     })
   }, [typeformRef])
 
-      render() {
+    render() {
         return <div ref={typeformRef} style={{ height: '100vh', width: '100%' }}></div>
       }
 }
