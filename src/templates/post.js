@@ -3,7 +3,7 @@ import _ from 'lodash';
 import moment from 'moment-strftime';
 import { graphql } from 'gatsby';
 
-import { Layout } from '../components/index';
+import { Layout, ReviewForm } from '../components/index';
 import { withPrefix, htmlToReact } from '../utils';
 import * as typeformEmbed from '@typeform/embed'
 
